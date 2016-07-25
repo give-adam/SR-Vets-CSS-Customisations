@@ -1,0 +1,253 @@
+/* START: HEADER SECTION , meaningless change*/
+
+	/* Increase width of header container, Adam */
+		#hd-container{
+			max-width: 100%;
+		}
+
+	/* Reduce size of logo section, Adam */
+		#hd-left{
+			max-width: 15%;
+		}
+
+	/* Increases width of contacts section, Adam */
+		#hd-right{
+			width: 85%;
+			max-width: 85%;
+		}
+
+	/* Orders contact details on to single line, Adam */
+	#contacts{
+		display: flex;
+		flex-direction: row;
+	   justify-content: space-around;
+	}
+
+	/* Improves position of contact details, Adam */
+	#contacts{
+		    margin-top: 5%;
+		    margin-right: 5%;
+	}
+
+	#hd-container .lc {
+		margin: 0 0 0 0;
+	}
+
+	/* Prevents logo from shrinking too much, Adam */
+	#logo img {
+		min-height: 150px;
+		min-width: 150px;
+	}
+
+/* END: HEADER SECTION */
+
+/* Hides banner, Adam */
+	#banner-container{
+		display: none;
+	}
+
+/* Changes page background, Adam (INACTIVE)
+	#doc {
+			background-image: url("sr-vets.com.au/assets/Southern-Riverina-Vets/Uploads/2016/OutbackGrainCo071.JPG");
+	}
+ */
+
+/* START: NAVIGATION */
+	/* Tim's Nav Modification */
+	/* Modify the header container so that it appears underneath nav menu */
+		#hd-container {
+			z-index: 700 !important;
+		}
+		div#top-nav ul {
+			margin: 0 auto;
+		}
+		div#top-nav.fixed-navbar {
+			position: fixed;
+			width: 100%;
+			height: auto;
+			top: 0;
+			left: 0;
+			display: flex;
+			z-index: 800;
+		}
+	/* Prevent the Navigation bar and banner overlapping. */
+		#top-nav-container {
+			float: none;
+			text-align: center;
+		}
+
+	/* Prevent banner images from overlapping nav bar when 'top' is being used. */
+		#banner > img {
+			top: 0px;
+		}
+
+	/* Centres navigation sub-menu text */
+		#top-nav {
+			/* display: inline-block; */
+			text-align: left;
+			display:flex;
+			z-index: 800;
+		}
+
+		#top-nav > ul {
+			margin: 0 auto !important;
+		}
+
+	/* Changes background colour of navigation sub-menu */
+		#top-nav li ul {
+			background-color: rgba(51, 51, 153, 0.75);
+			padding: 10px 0;
+		}
+
+	/* Changes colour of navigation sub-menu text */
+		#top-nav > ul li ul a {
+			color: #FFF;
+			font-size: 13px;
+		}
+
+		/* Left aligns navigation sub-menu text at full-size nav view  - Adam*/
+			#top-nav {
+				display: flex;
+				z-index: 800;
+				text-align: left;
+				}
+
+		/* Changes background colour of navigation sub-menu  - Adam*/
+			#top-nav li ul {
+				background-color: rgba(51, 51, 153, 0.75);
+				padding: 10px 0;
+				}
+
+		/* Changes colour of navigation sub-menu text  - Adam*/
+			#top-nav > ul li ul a {
+				color: #FFF;
+				font-size: 13px;
+				}
+
+		/* Maintains full width navigation in mobile view and centers text (IMPORTANT USED) - Adam*/
+			@media only screen and (max-width: 38.5em) {
+			 div#top-nav.navbar-collapse.expanded {
+				width:100%;
+				text-align: center !important;
+				}
+			}
+
+/* END: NAVIGATION */
+
+/* START: PAGE TITLE */
+
+	/* Styles Page title container, Adam */
+		#page-title {
+			padding: 0%;
+			background: none;
+			background-color: rgba(255, 255, 255, 0.80);
+			border-style: solid;
+			border-color: #FFFFFF;
+			border-width: 5px;
+			box-shadow: 5px 5px 10px #666;
+			margin: 1% 0% 2% 0%;
+		}
+
+	/* Hides title footer div, Adam */
+		#page-title-ft {
+			display: none;
+		}
+
+
+/* END: PAGE TITLE */
+
+/* START: PROMO BOX */
+
+/* Hides Promo Box */
+	#promo-box{
+		display: none;
+	}
+
+/* END: PROMO BOX */
+
+/* START: DIV .bd-width */
+
+	/* Remove background image and colour, Adam */
+		.bd-width{
+			background: none;
+			background-color: none;
+		}
+
+		.type_HomePage #bd{
+			background: none;
+			background-color: none;
+		}
+
+/* END: DIV .bd-width */
+
+/* START: DIV # PRIMARY */
+
+	/* Removes background colour, Adam */
+		#primary {
+			background: none;
+		}
+
+		.type_HomePage #primary{
+			width: 60%;
+		}
+
+		@media only screen and (max-width: 800px) {
+			.type_HomePage #primary {
+				width: 100%;
+			}
+		}
+
+	/* Increases DIV width of left + right so they aren't side by side. Also applies container styling, Adam */
+		#cn-left, #cn-right {
+			width: 99%;
+			padding: 2%;
+		    background-color: rgba(255, 255, 255, 0.80);
+		    border-style: solid;
+		    border-color: #FFFFFF;
+		    border-width: 5px;
+		    box-shadow: 5px 5px 10px #666;
+		    margin: 0% 0% 3% 0%;
+		}
+
+		@media only screen and (max-width: 800px) {
+			#cn-left, #cn-right{
+			width: 90%;
+			}
+		}
+
+/* END: DIV # PRIMARY */
+
+/* START: DIV # SECONDARY */
+
+	/* Adjusts width and applies box styling */
+		.type_HomePage #secondary{
+			width: 30%;
+			padding: 2%;
+		    background-color: rgba(255, 255, 255, 0.80);
+		    border-style: solid;
+		    border-color: #FFFFFF;
+		    border-width: 5px;
+		    box-shadow: 5px 5px 10px #666;
+		    margin: 0%;
+		}
+
+		@media only screen and (max-width: 800px) {
+			.type_HomePage #secondary {
+				display:none;
+			}
+		}
+
+/* END: DIV # SECONDARY */
+
+/* START: FOOTER */
+
+	body > #cn #ft {
+		background-color: rgba(255, 255, 255, 0.75) !important;
+		border-color: #3F51B5;
+	}
+
+	body #cn #ft li a {
+		color: #868686;
+	}
+
+/* END: FOOTER */
