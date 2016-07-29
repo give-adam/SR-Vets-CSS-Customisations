@@ -286,7 +286,7 @@
 		}
 
 	/* Increases DIV width of left + right so they aren't side by side. Also applies container styling, Adam */
-		#cn-left, #cn-right {
+		.type_HomePage #cn-left, .type_HomePage #cn-right {
 			width: 99%;
 			padding: 2%;
 		    background-color: rgba(255, 255, 255, 0.80);
@@ -577,6 +577,34 @@
 	.type_TwoColumnLayoutPage #primary{
 		width: 93%;
  	}
+}
+
+/* Removes styling from primary box at smaller size, Adam */
+@media (max-width: 801px) {
+	.type_TwoColumnLayoutPage #primary {
+   	width: 93%;
+		padding: 2%;
+		background-color: rgba(255, 255, 255, 0.00);
+		border-style: none;
+		border-color: #FFFFFF;
+		border-width: 0px;
+		box-shadow: 0px 0px 0px #666;
+		margin: 0%;
+		}
+}
+
+@media (max-width: 801px) {
+	.type_TwoColumnLayoutPage #cn-left, #cn-right {
+   	width: 93%;
+		padding: 2%;
+		background-color: rgba(255, 255, 255, 0.80);
+		border-style: solid;
+		border-color: #FFFFFF;
+		border-width: 5px;
+		box-shadow: 5px 5px 10px #666;
+		margin: 0%;
+		margin-bottom: 2%;
+	}
 }
 
 /* END: TWO COLUMN LAYOUT PAGE */
