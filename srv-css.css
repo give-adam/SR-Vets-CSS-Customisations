@@ -510,15 +510,76 @@
 .type_Gallery #primary{
 	width: 56%;
 	padding: 2%;
+	background-color: rgba(255, 255, 255, 0.80);
+	border-style: solid;
+	border-color: #FFFFFF;
+	border-width: 5px;
+	box-shadow: 5px 5px 10px #666;
+	margin: 0%;
+ }
+
+@media (max-width: 801px) {
+	.type_Gallery #primary{
+		width: 93%;
+ 	}
+}
+
+/* END: GALLERY PAGE */
+
+/* START: TWO COLUMN LAYOUT PAGE */
+
+.type_TwoColumnLayoutPage .bd-width {
+	background: url("")!important;
+	background-color: rgba(239, 239, 239, 0)!important;
+}
+
+.type_TwoColumnLayoutPage #primary {
+	background: none;
+	width: 60%;
+	padding: 0 0 0 0;
+}
+
+@media only screen and (max-width: 800px) {
+	.type_TwoColumnLayoutPage #primary {
+		width: 100%;
+	}
+}
+
+.type_TwoColumnLayoutPage #secondary{
+	width: 30%;
+	padding: 2%;
 	 background-color: rgba(255, 255, 255, 0.80);
 	 border-style: solid;
 	 border-color: #FFFFFF;
 	 border-width: 5px;
 	 box-shadow: 5px 5px 10px #666;
 	 margin: 0%;
+}
+
+@media only screen and (max-width: 800px) {
+	.type_TwoColumnLayoutPage #secondary {
+		display:none;
+	}
+}
+
+.type_TwoColumnLayoutPage #primary{
+	width: 56%;
+	padding: 2%;
+	background-color: rgba(255, 255, 255, 0.80);
+	border-style: solid;
+	border-color: #FFFFFF;
+	border-width: 5px;
+	box-shadow: 5px 5px 10px #666;
+	margin: 0%;
  }
 
-/* END: GALLERY PAGE */
+@media (max-width: 801px) {
+	.type_TwoColumnLayoutPage #primary{
+		width: 93%;
+ 	}
+}
+
+/* END: TWO COLUMN LAYOUT PAGE */
 
 /* START: FOOTER */
 
