@@ -358,7 +358,60 @@
 		  margin: 0%;
 	  }
 
+	  @media (max-width:801px) {
+		.page_contact-us #primary{
+			  width: 94%;
+			  float:none;
+	  	}
+	}
+
+	@media (max-width:801px) {
+	 .page_contact-us #secondary{
+			display: none;
+	 }
+ }
+
 /* END: CONTACT US PAGE */
+
+/* START: STAFF HOLDER PAGE */
+
+	.type_StaffHolder .bd-width {
+		background: url("")!important;
+		background-color: rgba(239, 239, 239, 0)!important;
+	}
+
+	.type_StaffHolder #primary {
+		background: none;
+	}
+
+	.type_StaffHolder #primary{
+		width: 60%;
+	}
+
+	@media only screen and (max-width: 800px) {
+		.type_StaffHolder #primary {
+			width: 100%;
+		}
+	}
+
+	.type_StaffHolder #secondary{
+		width: 30%;
+		padding: 2%;
+		 background-color: rgba(255, 255, 255, 0.80);
+		 border-style: solid;
+		 border-color: #FFFFFF;
+		 border-width: 5px;
+		 box-shadow: 5px 5px 10px #666;
+		 margin: 0%;
+	}
+
+	@media only screen and (max-width: 800px) {
+		.type_StaffHolder #secondary {
+			display:none;
+		}
+	}
+
+/* END: STAFF HOLDER PAGE */
 
 /* START: FOOTER */
 
