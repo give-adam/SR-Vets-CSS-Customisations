@@ -758,6 +758,130 @@
 
 /* END: BLOG PAGE */
 
+/* START: BLOG ENTRY PAGE */
+
+.type_BlogEntry .bd-width {
+	background: url("")!important;
+	background-color: rgba(239, 239, 239, 0)!important;
+}
+
+.type_BlogEntry #primary {
+	background: none;
+	width: 60%;
+	padding: 0 0 0 0;
+}
+
+@media only screen and (max-width: 800px) {
+	.type_BlogEntry #primary {
+		width: 100%;
+	}
+}
+
+.type_BlogEntry #secondary{
+	width: 30%;
+	padding: 2%;
+	 background-color: rgba(255, 255, 255, 0.80);
+	 border-style: solid;
+	 border-color: #FFFFFF;
+	 border-width: 5px;
+	 box-shadow: 5px 5px 10px #666;
+	 margin: 0%;
+}
+
+@media only screen and (max-width: 800px) {
+	.type_BlogEntry #secondary {
+		display:none;
+	}
+}
+
+.type_BlogEntry #cn #doc .bd-width #primary{
+	width: 56%;
+	padding: 2%;
+	background-color: rgba(255, 255, 255, 0.80);
+	border-style: solid;
+	border-color: #FFFFFF;
+	border-width: 5px;
+	box-shadow: 5px 5px 10px #666;
+	margin: 0%;
+	margin-bottom: 2%;
+	float: right !important;
+ }
+
+@media (max-width: 801px) {
+	.type_BlogEntry #primary{
+		width: 93% !important;
+ 	}
+}
+
+/* Removes styling from primary box at smaller size, Adam */
+@media (max-width: 801px) {
+	.type_BlogEntry #primary {
+   	width: 93%;
+		padding: 2%;
+		background-color: rgba(255, 255, 255, 0.00);
+		border-style: none;
+		border-color: #FFFFFF;
+		border-width: 0px;
+		box-shadow: 0px 0px 0px #666;
+		margin: 0%;
+		}
+}
+
+@media (max-width: 801px) {
+	.type_BlogEntry .blog-summary {
+   	width: 93%;
+		padding: 2%;
+		background-color: rgba(255, 255, 255, 0.80);
+		border-style: solid;
+		border-color: #FFFFFF;
+		border-width: 5px;
+		box-shadow: 5px 5px 10px #666;
+		margin: 0%;
+		margin-bottom: 2%;
+		}
+}
+
+@media (max-width: 801px) {
+	.type_BlogEntry #PageNumbers {
+		padding: 2%;
+		background-color: rgba(255, 255, 255, 0.80);
+		border-style: solid;
+		border-color: #FFFFFF;
+		border-width: 5px;
+		box-shadow: 5px 5px 10px #666;
+		margin: 0%;
+		margin-bottom: 2%;
+		}
+}
+
+	.type_BlogEntry #recent-blog-entries{
+		background-color: rgba(255, 255, 255, 0.80);
+		border-style: solid;
+		border-color: #FFFFFF;
+		border-width: 5px;
+		box-shadow: 5px 5px 10px #666;
+		margin: 0%;
+		margin-bottom: 2%;
+		float: right;
+		width: 56%;
+	}
+
+@media (max-width: 801px) {
+	.type_BlogEntry #recent-blog-entries{
+		background-color: rgba(255, 255, 255, 0.80);
+		border-style: solid;
+		border-color: #FFFFFF;
+		border-width: 5px;
+		box-shadow: 5px 5px 10px #666;
+		margin: 0%;
+		margin-bottom: 2%;
+		float: right;
+		width: 93%;
+	}
+}
+
+/* END: BLOG ENTRY PAGE */
+
 /* START: FOOTER */
 
 	body > #cn #ft {
