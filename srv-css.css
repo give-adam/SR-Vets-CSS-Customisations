@@ -411,6 +411,17 @@
 		}
 	}
 
+	#staff-list{
+		width: 99%;
+		padding: 2%;
+		background-color: rgba(255, 255, 255, 0.80);
+		border-style: solid;
+		border-color: #FFFFFF;
+		border-width: 5px;
+		box-shadow: 5px 5px 10px #666;
+		margin: 0% 0% 3% 0%;
+	}
+
 /* END: STAFF HOLDER PAGE */
 
 /* START: FOOTER */
