@@ -209,6 +209,17 @@
 				}
 			}
 
+		/* Make navigation flex, Adam */
+			@media (min-width: 602px) {
+				#top-nav > ul {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					flex-direction: row;
+					flex-wrap: wrap;
+				}
+			}
+
 /* END: NAVIGATION */
 
 /* START: PAGE TITLE */
