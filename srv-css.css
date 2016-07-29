@@ -382,10 +382,8 @@
 
 	.type_StaffHolder #primary {
 		background: none;
-	}
-
-	.type_StaffHolder #primary{
 		width: 60%;
+		padding: 0 0 0 0;
 	}
 
 	@media only screen and (max-width: 800px) {
