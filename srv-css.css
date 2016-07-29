@@ -662,6 +662,102 @@
 
 /* END: TYPE PAGE */
 
+/* START: BLOG PAGE */
+
+.page_blog .bd-width {
+	background: url("")!important;
+	background-color: rgba(239, 239, 239, 0)!important;
+}
+
+.page_blog #primary {
+	background: none;
+	width: 60%;
+	padding: 0 0 0 0;
+}
+
+@media only screen and (max-width: 800px) {
+	.page_blog #primary {
+		width: 100%;
+	}
+}
+
+.page_blog #secondary{
+	width: 30%;
+	padding: 2%;
+	 background-color: rgba(255, 255, 255, 0.80);
+	 border-style: solid;
+	 border-color: #FFFFFF;
+	 border-width: 5px;
+	 box-shadow: 5px 5px 10px #666;
+	 margin: 0%;
+}
+
+@media only screen and (max-width: 800px) {
+	.page_blog #secondary {
+		display:none;
+	}
+}
+
+.page_blog #primary{
+	width: 56%;
+	padding: 2%;
+	background-color: rgba(255, 255, 255, 0.80);
+	border-style: solid;
+	border-color: #FFFFFF;
+	border-width: 5px;
+	box-shadow: 5px 5px 10px #666;
+	margin: 0%;
+ }
+
+@media (max-width: 801px) {
+	.page_blog #primary{
+		width: 93%;
+ 	}
+}
+
+/* Removes styling from primary box at smaller size, Adam */
+@media (max-width: 801px) {
+	.page_blog #primary {
+   	width: 93%;
+		padding: 2%;
+		background-color: rgba(255, 255, 255, 0.00);
+		border-style: none;
+		border-color: #FFFFFF;
+		border-width: 0px;
+		box-shadow: 0px 0px 0px #666;
+		margin: 0%;
+		}
+}
+
+@media (max-width: 801px) {
+	.page_blog .blog-summary {
+   	width: 93%;
+		padding: 2%;
+		background-color: rgba(255, 255, 255, 0.80);
+		border-style: solid;
+		border-color: #FFFFFF;
+		border-width: 5px;
+		box-shadow: 5px 5px 10px #666;
+		margin: 0%;
+		margin-bottom: 2%;
+		}
+}
+
+@media (max-width: 801px) {
+	.page_blog #PageNumbers {
+		padding: 2%;
+		background-color: rgba(255, 255, 255, 0.80);
+		border-style: solid;
+		border-color: #FFFFFF;
+		border-width: 5px;
+		box-shadow: 5px 5px 10px #666;
+		margin: 0%;
+		margin-bottom: 2%;
+		}
+}
+
+/* END: BLOG PAGE */
+
 /* START: FOOTER */
 
 	body > #cn #ft {
