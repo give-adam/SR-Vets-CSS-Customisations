@@ -422,6 +422,44 @@
 
 /* END: STAFF HOLDER PAGE */
 
+/* START: GALLERY PAGE */
+
+.type_GalleryHolder .bd-width {
+	background: url("")!important;
+	background-color: rgba(239, 239, 239, 0)!important;
+}
+
+.type_GalleryHolder #primary {
+	background: none;
+	width: 60%;
+	padding: 0 0 0 0;
+}
+
+@media only screen and (max-width: 800px) {
+	.type_GalleryHolder #primary {
+		width: 100%;
+	}
+}
+
+.type_GalleryHolder #secondary{
+	width: 30%;
+	padding: 2%;
+	 background-color: rgba(255, 255, 255, 0.80);
+	 border-style: solid;
+	 border-color: #FFFFFF;
+	 border-width: 5px;
+	 box-shadow: 5px 5px 10px #666;
+	 margin: 0%;
+}
+
+@media only screen and (max-width: 800px) {
+	.type_GalleryHolder #secondary {
+		display:none;
+	}
+}
+
+/* END: GALLERY PAGE */
+
 /* START: FOOTER */
 
 	body > #cn #ft {
