@@ -327,6 +327,39 @@
 
 /* END: DIV # SECONDARY */
 
+/* START: CONTACT US PAGE */
+
+	/* Removes background image & colour, Adam */
+	.page_contact-us .bd-width {
+		background: url("")!important;
+		background-color: rgba(239, 239, 239, 0)!important;
+	}
+
+	/* Adjusts width and applies box styling */
+	.page_contact-us #secondary{
+		width: 30%;
+		padding: 2%;
+		 background-color: rgba(255, 255, 255, 0.80);
+		 border-style: solid;
+		 border-color: #FFFFFF;
+		 border-width: 5px;
+		 box-shadow: 5px 5px 10px #666;
+		 margin: 0%;
+	 }
+
+	 .page_contact-us #primary{
+		 width: 56%;
+		 padding: 2%;
+		  background-color: rgba(255, 255, 255, 0.80);
+		  border-style: solid;
+		  border-color: #FFFFFF;
+		  border-width: 5px;
+		  box-shadow: 5px 5px 10px #666;
+		  margin: 0%;
+	  }
+
+/* END: CONTACT US PAGE */
+
 /* START: FOOTER */
 
 	body > #cn #ft {
