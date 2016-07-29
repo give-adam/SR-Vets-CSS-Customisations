@@ -1,4 +1,4 @@
-/* START: HEADER SECTION , meaningless change*/
+/* START: HEADER SECTION */
 
 	/* Increase width of header container, Adam */
 		#hd-container{
@@ -6,8 +6,10 @@
 		}
 
 	/* Reduce size of logo section, Adam */
-		#hd-left{
-			max-width: 15%;
+		@media (min-width: 999px){
+			#hd-left{
+				max-width: 15%;
+			}
 		}
 
 	/* Increases width of contacts section, Adam */
@@ -16,17 +18,87 @@
 			max-width: 85%;
 		}
 
+	/* Adjusts width of contacts container at <1000px, Adam */
+		@media (max-width: 999px){
+			#hd-right{
+				max-width: 100%;
+				width: 100%;
+				margin-right: 0px;
+			}
+		}
+
+		/* Adjusts width of logo container at <1000px, and centers logo, Adam*/
+			@media (max-width: 999px) {
+				#hd-left{
+						float: none;
+						max-width: 100%
+					}
+			}
+
+			@media (max-width: 999px) {
+				#logo{
+					margin-left: auto;
+					margin-right: auto;
+				}
+			}
+
 	/* Orders contact details on to single line, Adam */
-	#contacts{
+	@media (min-width: 900px){
+		#contacts{
 		display: flex;
 		flex-direction: row;
 	   justify-content: space-around;
+		}
+	}
+
+	@media (max-width: 899px){
+		#contacts{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		flex-wrap: wrap;
+		}
+	}
+
+	/* Keeps phone number boxes lined up when flex-wrap hits, Adam */
+	@media (max-width: 899px){
+		a.phone-no.graphic {
+			float: none;
+		}
+	}
+
+	/* Hides the spacer div so the contacts line up when wrapping, Adam */
+	@media (max-width: 899px){
+		#contacts > .spacer {
+		display: none;
+		}
+	}
+
+	/* Align location text to the left, Adam */
+	@media (max-width: 899px){
+		.lc > p > span {
+			text-align: left;
+		}
+	}
+
+	/* Set width of click-to-reveal button to uniform amount, Adam */
+	@media (max-width: 899px){
+		.lc > a.button {
+			width: 190px;
+		}
 	}
 
 	/* Improves position of contact details, Adam */
 	#contacts{
 		    margin-top: 5%;
 		    margin-right: 5%;
+	}
+
+	@media (max-width: 899px){
+		#contacts{
+		    margin-top: 0%;
+		    margin-right: 0%;
+		 }
 	}
 
 	#hd-container .lc {
@@ -74,6 +146,11 @@
 		#top-nav-container {
 			float: none;
 			text-align: center;
+		}
+
+	/* Increase size of top level navigation text, Adam */
+		#top-nav > ul > li a{
+			font-size: 16px;
 		}
 
 	/* Prevent banner images from overlapping nav bar when 'top' is being used. */
