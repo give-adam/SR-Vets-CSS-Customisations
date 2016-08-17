@@ -1,0 +1,172 @@
+/* START: NAVIGATION */
+	/* Tim's Nav Modification */
+	/* Modify the header container so that it appears underneath nav menu */
+		#hd-container {
+			z-index: 700 !important;
+		}
+		div#top-nav ul {
+			margin: 0 auto;
+		}
+		div#top-nav.fixed-navbar {
+			position: fixed;
+			width: 100%;
+			height: auto;
+			top: 0;
+			left: 0;
+			display: flex;
+			z-index: 800;
+		}
+	/* Prevent the Navigation bar and banner overlapping. */
+		#top-nav-container {
+			float: none;
+			text-align: center;
+		}
+
+	/* Increase size of top level navigation text, Adam */
+		#top-nav > ul > li a{
+			font-size: 16px;
+		}
+
+	/* Prevent banner images from overlapping nav bar when 'top' is being used. */
+		#banner > img {
+			top: 0px;
+		}
+
+	/* Centres navigation sub-menu text */
+		#top-nav {
+			/* display: inline-block; */
+			text-align: left;
+			display:flex;
+			z-index: 800;
+		}
+
+		#top-nav > ul {
+			margin: 0 auto !important;
+		}
+
+	/* Changes colour of navigation sub-menu text */
+		#top-nav > ul li ul a {
+			color: #FFF;
+			font-size: 13px;
+		}
+
+		/* Left aligns navigation sub-menu text at full-size nav view  - Adam*/
+			#top-nav {
+				display: flex;
+				z-index: 800;
+				text-align: left;
+				}
+
+		/* Changes colour of navigation sub-menu text  - Adam*/
+			#top-nav > ul li ul a {
+				color: #FFF;
+				font-size: 13px;
+				}
+
+		/* Maintains full width navigation in mobile view and centers text (IMPORTANT USED) - Adam*/
+			@media only screen and (max-width: 38.5em) {
+			 div#top-nav.navbar-collapse.expanded {
+				width:100%;
+				text-align: center !important;
+				}
+			}
+
+		/* Make navigation flex, Adam */
+			@media (min-width: 602px) {
+				#top-nav > ul {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					flex-direction: row;
+					flex-wrap: wrap;
+				}
+			}
+
+		#top-nav li ul{
+			background-color: #18482b;
+		}
+/* END: NAVIGATION */
+
+/* START: GENERAL */
+
+	/* Change background colour to white, Adam */
+	#doc.primary-color{
+		background-color: #FFF;
+		background-image: url();
+	}
+
+	#bd{
+		background-color: #FFF;
+	}
+
+/* END: GENERAL */
+
+#promo-box {
+	display: none;
+}
+
+/* START: HOME PAGE */
+
+/* Hidden Elements */
+
+.page_home #secondary{
+	display: none;
+}
+
+.page_home #primary{
+	width: 100%;
+}
+
+.page_home #cn-right{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+
+/* END: HOME PAGE */
+
+/* START: MODULES */
+
+.page-box-container{
+	padding-bottom: 15px;
+}
+
+.page-box{
+	display: flex;
+	height: 200px;
+	width: 350px;
+	background-image: url("http://yarrarangesvet.com.au/assets/Uploads/Clients/26/Banners/_resampled/CroppedImage1000350-clinicnarrow1.jpg");
+	background-size: cover;
+	align-items: center;
+	justify-content: center;
+	border-radius: 25px;
+}
+
+.page-box:hover{
+    box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+	transition-duration: 1s;
+}
+
+.page-box-title{
+	color: #fff;
+	 text-shadow:
+	3px 3px 0 #b30f0d,
+	 -1px -1px 0 #b30f0d,
+	1px -1px 0 #b30f0d,
+	-1px  1px 0 #b30f0d,
+	1px  1px 0 #b30f0d;
+}
+
+.page-box-title:hover{
+	text-decoration: none;
+	color: #fff;
+}
+
+.page-box-link:hover{
+	color: #fff;
+}
+
+/* END: MODULES */
